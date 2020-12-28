@@ -1,0 +1,27 @@
+{% extends "_includes/default.njk" %}
+
+{% block title %}It does work{% endblock %}
+
+{% block content %}
+  <div class="fixed inset-0 flex justify-center items-center">
+    <div class="space-y-5">
+        <h1 class="text-4xl pb-4 text-weight-20">Olivier Livet : Développeur Web</h1>
+        <p>
+        J'affectionne concevoir et développer des applications simples, rapides, efficaces, frugales.
+        </p>
+        <p>
+            Je travaille actuellement avec ces technos et outils :
+        </p>
+        <ul>
+        <li>React/AlpineJs</li>
+        <li>Gatsby/Eleventy</li>
+        <li>ChakraUi/Tailwind</li>
+        <li>Contentful/Prismic</li>
+        </ul>
+        <p>Side project : <a href="https://www.wanaboat.fr">Capitaine@Wanaboat.fr</a></p>
+        <p>Précédement : <span class="line-through">Lead-dev@LeLynx.fr</span></p>
+        <div x-data="{message:'Contact : oli.livet@gmail.com'}" x-text="message">Active le JS pour avoir mon mail bro 🤓</div>
+        <div x-data="{message:'🤖 Hello World 🤓'}" x-text="message"></div>
+    </div>
+  </div>
+{% endblock %}  
