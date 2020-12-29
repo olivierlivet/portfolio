@@ -8,6 +8,9 @@ module.exports = function (eleventyConfig) {
         return String(Date.now());
     });
 
+    // Copy `img/` to `_site/img`
+    eleventyConfig.addPassthroughCopy("img");
+
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
         if (
           process.env.ELEVENTY_PRODUCTION &&
