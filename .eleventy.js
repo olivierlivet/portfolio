@@ -10,6 +10,8 @@ module.exports = function (eleventyConfig) {
 
     // Copy `img/` to `_site/img`
     eleventyConfig.addPassthroughCopy("img");
+    // Copy `vercel.json` 
+    eleventyConfig.addPassthroughCopy("vercel.json");
 
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
         if (
